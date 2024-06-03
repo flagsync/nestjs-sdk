@@ -8,8 +8,12 @@ That's why we developed an affordable, user-friendly platform that delivers the 
 
 ---
 
-# Coming Soon!
+## Coming Soon!
 
 ## Getting Started
 
-Refer to the [SDK documentation](https://docs.flagsync.com/sdks/node-javascript) for more information on how to use this library.
+Refer to the [SDK documentation](https://docs.flagsync.com/sdks/nest) for more information on how to use this library.
+
+## Node
+
+This SDK wraps the [JavaScript SDK](https://github.com/flagsync/javascript-client) for smoother integration with Nest.js acpplications. However, if you're building a non-Nest.js application for Node.js, you should use our isomorphic [JavaScript SDK](https://github.com/flagsync/javascript-client) instead.
