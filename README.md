@@ -20,4 +20,4 @@ Refer to the [SDK documentation](https://docs.flagsync.com/sdks/nest.js) for mor
 
 ## Node
 
-This SDK wraps the [JavaScript SDK](https://github.com/flagsync/javascript-client) for smoother integration with [Nest.js](https://nestjs.com/) applications. However, if you're building a non-Nest.js application for Node.js, you should use our isomorphic [JavaScript SDK](https://github.com/flagsync/javascript-client) instead.
+This SDK wraps the [JavaScript SDK](https://github.com/flagsync/javascript-client) for smoother integration with [Nest.js](https://nestjs.com/) applications. However, if you're building a non-Nest.js application for Node.js, you should use our [Node SDK](https://github.com/flagsync/node-client) instead.
