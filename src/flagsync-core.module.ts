@@ -28,8 +28,8 @@ export class FlagSyncCoreModule implements OnModuleDestroy {
               ...config,
               logger: FlagSyncCoreModule.buildLogger(logger),
               metadata: {
-                sdkName: '__SDK_VERSION__',
-                sdkVersion: '__SDK_NAME__',
+                sdkName: '__SDK_NAME__',
+                sdkVersion: '__SDK_VERSION__',
               },
             });
             const client = factory.client();
@@ -53,8 +53,8 @@ export class FlagSyncCoreModule implements OnModuleDestroy {
           ...config,
           logger: FlagSyncCoreModule.buildLogger(logger),
           metadata: {
-            sdkName: '__SDK_VERSION__',
-            sdkVersion: '__SDK_NAME__',
+            sdkName: '__SDK_NAME__',
+            sdkVersion: '__SDK_VERSION__',
           },
         });
         const client = factory.client();
