@@ -28,8 +28,8 @@ export class FlagSyncCoreModule implements OnModuleDestroy {
               ...config,
               logger: FlagSyncCoreModule.buildLogger(logger),
               metadata: {
-                sdkName: '@flagsync/nest-sdk',
-                sdkVersion: '0.0.1',
+                sdkName: '__SDK_VERSION__',
+                sdkVersion: '__SDK_NAME__',
               },
             });
             const client = factory.client();
@@ -53,8 +53,8 @@ export class FlagSyncCoreModule implements OnModuleDestroy {
           ...config,
           logger: FlagSyncCoreModule.buildLogger(logger),
           metadata: {
-            sdkName: '@flagsync/nest-sdk',
-            sdkVersion: '0.0.1',
+            sdkName: '__SDK_VERSION__',
+            sdkVersion: '__SDK_NAME__',
           },
         });
         const client = factory.client();
