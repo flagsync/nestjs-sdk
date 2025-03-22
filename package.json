@@ -49,7 +49,7 @@
     "rxjs": "^7.8.1"
   },
   "dependencies": {
-    "@flagsync/node-sdk": "^0.2.0"
+    "@flagsync/node-sdk": "^0.2.2"
   },
   "devDependencies": {
     "@nestjs/common": "^10.0.0",
