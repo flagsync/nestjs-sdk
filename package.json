@@ -1,6 +1,6 @@
 {
   "name": "@flagsync/nestjs-sdk",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "FlagSync SDK for Nest.js",
   "author": "Mike Chabot",
   "license": "Apache-2.0",
