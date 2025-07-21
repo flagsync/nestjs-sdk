@@ -6,10 +6,11 @@ export type {
   FsClient,
   LogLevel,
   FsUserContext,
+  FeatureFlags,
   FsEvent,
+  SyncType,
 } from '@flagsync/node-sdk';
 
-export { SyncType } from '@flagsync/node-sdk';
 export { InjectFlagSync } from './decorators';
 export { type FlagSyncModuleAsyncOptions } from './types';
 
