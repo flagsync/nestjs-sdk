@@ -9,6 +9,9 @@ export type {
   FeatureFlags,
   FsEvent,
   SyncType,
+  NoExplicitReturnType,
+  IsFeatureFlagsEmpty,
+  FlagReturnType,
 } from '@flagsync/node-sdk';
 
 export { InjectFlagSync } from './decorators';
