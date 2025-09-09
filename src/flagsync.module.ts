@@ -4,6 +4,7 @@ import { FsConfig } from '@flagsync/node-sdk';
 import { FlagSyncCoreModule } from './flagsync-core.module';
 import { FlagSyncModuleAsyncOptions } from './types';
 
+// eslint-disable-next-line prettier/prettier
 @Global()
 @Module({})
 export class FlagSyncModule {

@@ -12,6 +12,7 @@ import { FlagSyncModuleAsyncOptions } from './types';
 import { ModuleRef } from '@nestjs/core';
 import { FLAGSYNC_CLIENT, FLAGSYNC_CONFIG } from './constants';
 
+// eslint-disable-next-line prettier/prettier
 @Global()
 @Module({})
 export class FlagSyncCoreModule implements OnModuleDestroy {
