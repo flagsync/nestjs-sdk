@@ -1,6 +1,7 @@
 import {
   DynamicModule,
   Global,
+  Inject,
   Logger,
   Module,
   OnModuleDestroy,
@@ -16,7 +17,7 @@ import { FLAGSYNC_CLIENT, FLAGSYNC_CONFIG } from './constants';
 @Global()
 @Module({})
 export class FlagSyncCoreModule implements OnModuleDestroy {
-  constructor(private moduleRef: ModuleRef) {}
+  constructor(@Inject(ModuleRef) private moduleRef: ModuleRef) {}
 
   static forRoot(config: FsConfig, logger: Logger): DynamicModule {
     return {
