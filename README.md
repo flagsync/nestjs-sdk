@@ -2,7 +2,7 @@
 
 The `@flagsync/nest-sdk` integrates into [Nest.js](https://nestjs.com/) applications for server-side feature management and event tracking—ideal for backend services and APIs.
 
-[![npm version](https://badge.fury.io/js/%40flagsync%2Fnest-sdk.svg)](https://badge.fury.io/js/%40flagsync%2Fnest-sdk)
+[![npm version](https://badge.fury.io/js/%40flagsync%2Fnest-sdk.svg)](https://badge.fury.io/js/%40flagsync%2Fnestjs-sdk)
 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/flagsync.svg?style=social&label=Follow%20%40flagsync)](https://twitter.com/flagsync)
 
 ## Compatibility
