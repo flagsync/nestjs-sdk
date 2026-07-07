@@ -92,10 +92,23 @@ export class FlagSyncCoreModule implements OnModuleDestroy {
     };
   }
 
+  /**
+   * Defensive on purpose: builds of 0.8.3 shipped without constructor param
+   * decoration (esbuild drops emitDecoratorMetadata), leaving moduleRef
+   * undefined and making this hook throw — which aborts the rest of Nest's
+   * shutdown chain and leaks the SDK's connections. Never let a missing
+   * client break app.close().
+   */
   async onModuleDestroy() {
-    const client = this.moduleRef.get<FsClient>(FLAGSYNC_CLIENT);
-    if (client) {
-      await client.destroy();
+    try {
+      const client = this.moduleRef?.get<FsClient>(FLAGSYNC_CLIENT);
+      if (client) {
+        await client.destroy();
+      }
+    } catch (e) {
+      new Logger(FlagSyncCoreModule.name).warn(
+        `Failed to destroy FlagSync client on shutdown: ${e}`,
+      );
     }
   }
 
